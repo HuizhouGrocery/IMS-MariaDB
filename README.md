@@ -80,7 +80,7 @@ def hello_world():
 flask run --host 0.0.0.0 --port 5140
 ```
 
-Until now, you will get your LAN address like (192.168.1.80). You could test can you connect 192.168.1.80 in your browser of other PCs. Definitely, all PCs need to work in one Router network.
+Until now, you will get your LAN address like (192.168.1.80). You could test can you connect 192.168.1.80 in your browser of other PCs. Definitely, all PCs need to work in one Router(Some routers may not support data transfer) network.
 <br/>
 <br/>
 In other PCs, HeidiSQL could change 127.0.0.1 to 192.168.1.80. And you may find you could connect your current MariaDB from other PCs now. 
