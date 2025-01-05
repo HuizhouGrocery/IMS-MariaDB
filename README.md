@@ -21,14 +21,13 @@ pip install pymysql
 ```
 
 <br/>
-This time we need to go to MariaDB.org to download database for our Desktop(Laptop). Our testing environment is Windows and we get HeidiSQL exe.
+This time we need to go to MariaDB.org to download the database for our Desktop (Laptop). Our testing environment is Windows, and we get Heidi SQL EXE.
 <p align="center">
   <img src="Screenshot/1.JPG" width="100" title="hover text">
 </p>
 <br/>
 
-When we are installing MariaDB, we will set up root and default password. You could click button that let remote PC access your MariaDB database, which is important.
-
+When we are installing MariaDB, we will set up the root and default password. You could click a button that lets a remote PC access your MariaDB database, which is important.
 
 
 <p align="center">
@@ -45,7 +44,7 @@ After you can run Python code on your terminal, you need to run this code below.
 pyinstaller --onefile --name Huizhou-IMS -i logo.png --windowed IMS-MariaDB.py
 ```
 
-For now, it is same as sqlite database. Other PCs can not access your MariaDB database in your current PC even you are using this app. Why? We need to let our current PC become server in one LAN network.
+For now, it is the same as SQLite database. Other PCs can not access your MariaDB database on your current PC, even using this app. Why? We need to let our current PC become a server in one LAN network.
 <br/>
 <br/>
 Have you heard of mad-scientists' flask? We are using programmers' flask to let it work. Let us run both commands below.
@@ -80,10 +79,10 @@ def hello_world():
 flask run --host 0.0.0.0 --port 5140
 ```
 
-Until now, you will get your LAN address like (192.168.1.80). You could test can you connect 192.168.1.80 in your browser of other PCs. Definitely, all PCs need to work in one Router(Some routers may not support data transfer) network.
+Until now, you will get your LAN address like (192.168.1.80). You could test if you can connect 192.168.1.80 in your browser on other PCs. Definitely, all PCs need to work in one router network (some routers may not support data transfer; they will block servers).
 <br/>
 <br/>
-In other PCs, HeidiSQL could change 127.0.0.1 to 192.168.1.80. And you may find you could connect your current MariaDB from other PCs now. 
+In other PCs, Heidi SQL could change 127.0.0.1 to 192.168.1.80. And you may find you could connect your current MariaDB from other PCs now. 
 <br/>
 <br/>
 Final step is to change python code(host='192.168.1.80'), this simple app could work in all PCs now. Many people may expect it.
